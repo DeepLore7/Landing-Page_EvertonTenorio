@@ -1,15 +1,4 @@
-/**
-* Template Name: Day
-* Template URL: https://bootstrapmade.com/day-multipurpose-html-template-for-free/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -19,15 +8,15 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #EBE1E7; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #191919; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #795136; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #C7886B; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 
 }
-/* Minhas Alterações - Leonardo */
+/* Minhas Alterações - Leonardo --------------------------------------------------------------------------*/
 
 .bi-whatsapp {
   margin-left: 10px; /* Ajuste a margem conforme necessário */
@@ -55,12 +44,81 @@
 }
 
 .dark-background {
-  --background-color: #110c0c;
+  --background-color: #EBE1E7; /*fundo do perfil inicial */
   --default-color: #020202;
-  --heading-color: #ffffff;
+  --heading-color: #1f1d1d; /* cor da fonte da letra */
   --surface-color: #f5eded;
   --contrast-color: #ffffff;
 }
+
+
+.responsive-image {
+  max-width: 200px; /* Define um tamanho máximo para a imagem */
+  height: auto; /* Ajuste a altura conforme necessário */
+  position: absolute;
+  right: 10%; /* Inicialmente no lado direito da tela */
+  bottom: 10%; /* Posição inicial na parte inferior */
+  transform: translateX(10%) scale(1); /* Centraliza horizontalmente e define escala inicial */
+  animation: floatAnimation 5s ease-in-out infinite alternate;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateX(10%) scale(2) translateY(0); /* Posição inicial e escala 1 */
+  }
+  100% {
+    transform: translateX(5%) scale(2.2) translateY(-5px); /* Flutua um pouco para cima e diminui a escala */
+  }
+}
+
+@media (max-width: 768px) {
+  .responsive-image {
+    width: 200px; /* Ajustsse a largura para telas menores */
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-image {
+    width: 150px; /* Ajuste a largura para telas ainda menores */
+  }
+}
+
+.about-img img {
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    .nav-pills .nav-link {
+      background-color: #fff;
+      border-radius: 0.25rem;
+      color: #444;
+      font-weight: 500;
+    }
+    .nav-pills .nav-link.active, .nav-pills .nav-link:hover {
+      background-color: #C7886B;
+      color: #fff;
+    }
+    .tab-pane {
+      padding: 20px 0;
+    }
+    .tab-pane h4 {
+      margin-bottom: 10px;
+    }
+    .tab-pane p {
+      margin-bottom: 20px;
+    }
+    .tab-pane .fst-italic {
+      font-style: italic;
+      color: #666;
+    }
+    .d-flex.align-items-center {
+      margin-top: 0px;
+    }
+    .d-flex.align-items-center i {
+      font-size: 1.2rem;
+      margin-right: 10px;
+      color: #007bff;
+    }
+/* Fim das Alterações - Leonardo ---------------------------------------------------------------------------------*/
 
 /* Smooth scroll */
 :root {
@@ -153,7 +211,7 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #136bc4;
+  --background-color: #00365F;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --contrast-color: #ffffff;
@@ -221,8 +279,9 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: 6rem;
   margin-right: 8px;
+  
 }
 
 .header .logo h1 {
@@ -231,6 +290,14 @@ h6 {
   font-weight: 700;
   text-transform: uppercase;
   color: var(--heading-color);
+}
+
+.header .logo img #img-logo{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: none;
+  bottom: 0px;
 }
 
 /*--------------------------------------------------------------
@@ -898,23 +965,6 @@ section,
   justify-content: center;
 }
 
-.hero img {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-}
-
-.hero:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-}
 
 .hero .container {
   position: relative;
@@ -935,21 +985,23 @@ section,
 }
 
 .hero .btn-get-started {
-  color: var(--default-color);
+ 
+  color: #FFFFFF; /* Cor do texto do botão */
+  background-color: #C7886B; /* Cor marrom fixa do botão */
   font-weight: 400;
   font-size: 15px;
   display: inline-block;
   padding: 8px 30px;
   margin: 30px 0 0 0;
-  transition: 0.5s;
+  transition: none;
   text-transform: uppercase;
-  border: 2px solid color-mix(in srgb, var(--default-color), transparent 20%);
+  border: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
 .hero .btn-get-started:hover {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  border-color: var(--accent-color);
+  color: #070707;
+  background: #C7886B; /* Manter a cor marrom ao passar o mouse */
+  border-color: #C7886B; /* Manter a cor da borda ao passar o mouse */
 }
 
 @media (max-width: 768px) {
@@ -960,6 +1012,8 @@ section,
   .hero p {
     font-size: 18px;
   }
+
+
 }
 
 /*--------------------------------------------------------------
