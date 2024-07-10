@@ -166,7 +166,7 @@ h6 {
 ------------------------------*/
 .php-email-form .error-message {
   display: none;
-  background: #df1529;
+  background: #ececec;
   color: #ffffff;
   text-align: left;
   padding: 15px;
@@ -820,18 +820,20 @@ h6 {
   visibility: hidden;
   opacity: 0;
   right: 15px;
-  bottom: 15px;
+  bottom: 25px;
   z-index: 99999;
   background-color: var(--accent-color);
   width: 40px;
   height: 40px;
   transition: all 0.4s;
+  border-radius: 5px ;
 }
 
 .scroll-top i {
-  font-size: 24px;
+  font-size: 34px;
   color: var(--contrast-color);
   line-height: 0;
+  padding-left: 10px;
 }
 
 .scroll-top:hover {
