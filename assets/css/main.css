@@ -1039,27 +1039,31 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Picture logo Section
+# Picture Section
 --------------------------------------------------------------*/
-.clients {
-  padding: 1px ;
+.picture-to-action {
+  padding: 50px 0; /* Reduzi o padding para metade do valor original */
+  position: relative;
+  clip-path: inset(0);
 }
 
-.clients .swiper {
-  padding: 1px ;
+.picture-to-action img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
 }
 
-.clients .swiper-wrapper {
-  height: auto;
-}
-
-.clients .swiper-slide img {
-  transition: 1.3s;
-  padding: 0 10px;
-}
-
-.clients .swiper-slide img:hover {
-  transform: scale(1.1);
+.picture-to-action:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0); /* Cor preta sólida, sem transparência */
+  position: absolute;
+  inset: 0;
+  z-index: 2;
 }
 
 /*--------------------------------------------------------------
