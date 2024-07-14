@@ -94,6 +94,11 @@
 .about-img img {
       border-radius: 10px;
       box-shadow: 0 0 15px rgba(15, 15, 15, 0.295);
+      margin-top: 12%;
+    }
+    .about h1{
+      display: flex;
+      justify-content: start; 
     }
     .nav-pills .nav-link {
       background-color: #fff;
@@ -106,7 +111,7 @@
       color: #fff;
     }
     .tab-pane {
-      padding: 20px 0;
+      padding: 1px 0;
     }
     .tab-pane h4 {
       margin-bottom: 10px;
@@ -117,6 +122,7 @@
     .tab-pane .fst-italic {
       font-style: italic;
       color: #666;
+      padding: none;
     }
     .d-flex.align-items-center {
       margin-top: 0px;
@@ -435,12 +441,15 @@ h6 {
   .navmenu {
     padding: 0;
     z-index: 9997;
+    max-height: 50%;
+    
   }
 
   .navmenu ul {
     display: none;
     position: absolute;
-    inset: 60px 20px 20px 20px;
+    inset: 60px 20px 20px auto; /* Coloque 'auto' para o lado esquerdo e '20px' para o lado direito */
+    right: 20px; /* Posiciona a 'ul' a 20px do lado direito */
     padding: 10px 0;
     margin: 0;
     border-radius: 6px;
@@ -449,6 +458,8 @@ h6 {
     transition: 0.3s;
     z-index: 9998;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+    max-width: 70%;
+    
   }
 
   .navmenu a,
@@ -627,7 +638,7 @@ h6 {
   color: var(--default-color);
   background-color: var(--background-color);
   font-size: 14px;
-  padding-bottom: 50px;
+  
   position: relative;
 }
 
@@ -1004,7 +1015,7 @@ section,
 .hero .btn-get-started {
   color: #FFFFFF; /* Cor do texto do botão */
   background-color: #C7886B; /* Cor marrom fixa do botão */
-  font-weight: 400;
+  font-weight: 600;
   font-size: 15px;
   display: inline-block;
   padding: 8px 30px;
@@ -1012,12 +1023,16 @@ section,
   transition: none;
   text-transform: uppercase;
   border: 2px solid color-mix(in srgb, var(--default-color), transparent 90%);
+  gap: 10px;
+  margin-left: 10px;
+  border-radius: 0px 25px 0px 25px;
 }
 
 .hero .btn-get-started:hover {
-  color: #070707;
-  background: #C7886B; /* Manter a cor marrom ao passar o mouse */
-  border-color: #C7886B; /* Manter a cor da borda ao passar o mouse */
+  color: #ffffff;
+  background: #e95d1d; /* Manter a cor marrom ao passar o mouse */
+  border-color: #e95d1d; /* Manter a cor da borda ao passar o mouse */
+  
 }
 
 .card {
@@ -1665,6 +1680,27 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 30%);
 }
 
+.barraFinal {
+  padding: 50px 0; /* Reduzi o padding para metade do valor original */
+  max-height: 10rem;
+  background: #00365F;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centraliza a imagem horizontalmente */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse a altura máxima */
+}
+
+.barraFinal img {
+  max-height: 100%; /* Garante que a imagem não ultrapasse a altura da div */
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura da div */
+  height: auto; /* Mantém a proporção da imagem */
+  width: auto; /* Mantém a proporção da imagem */
+}
+.insignia{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
