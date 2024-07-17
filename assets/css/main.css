@@ -23,7 +23,8 @@
 }
 
 .sitename {
-  color: #ffffff; /* Define a cor branca para o texto */
+  color: #00365F; /* Define a cor branca para o texto */
+  
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
@@ -130,7 +131,7 @@
     .d-flex.align-items-center i {
       font-size: 1.2rem;
       margin-right: 10px;
-      color: #007bff;
+      color: #0661a7;
     }
 
     
@@ -226,7 +227,7 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
-.header {
+.header { 
   --background-color: #00365F; 
   --default-color: #ffffff;
   --heading-color: #ffffff;
@@ -918,7 +919,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 0px 0;
   scroll-margin-top: 100px;
   overflow: clip;
 }
@@ -1030,8 +1031,8 @@ section,
 
 .hero .btn-get-started:hover {
   color: #ffffff;
-  background: #e95d1d; /* Manter a cor marrom ao passar o mouse */
-  border-color: #e95d1d; /* Manter a cor da borda ao passar o mouse */
+  background: #00365F; /* Manter a cor marrom ao passar o mouse */
+  border-color: #00365F; /* Manter a cor da borda ao passar o mouse */
   
 }
 
@@ -1683,11 +1684,11 @@ section,
 .barraFinal {
   padding: 50px 0; /* Reduzi o padding para metade do valor original */
   max-height: 10rem;
-  background: #00365F;
+  background: #021e33;
   display: flex;
   align-items: center;
   justify-content: center; /* Centraliza a imagem horizontalmente */
-  overflow: hidden; /* Garante que o conteúdo não ultrapasse a altura máxima */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse a altura máxima*/
 }
 
 .barraFinal img {
