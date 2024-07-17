@@ -1688,7 +1688,7 @@ section,
   display: flex;
   align-items: center;
   justify-content: center; /* Centraliza a imagem horizontalmente */
-  overflow: hidden; /* Garante que o conteúdo não ultrapasse a altura máxima */
+  overflow: hidden; /* Garante que o conteúdo não ultrapasse a altura máxima*/
 }
 
 .barraFinal img {
