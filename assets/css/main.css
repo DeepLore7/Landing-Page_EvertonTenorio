@@ -1684,7 +1684,7 @@ section,
 .barraFinal {
   padding: 50px 0; /* Reduzi o padding para metade do valor original */
   max-height: 10rem;
-  background: #021e33;
+  background: #00365F;
   display: flex;
   align-items: center;
   justify-content: center; /* Centraliza a imagem horizontalmente */
