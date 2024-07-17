@@ -131,7 +131,7 @@
     .d-flex.align-items-center i {
       font-size: 1.2rem;
       margin-right: 10px;
-      color: #007bff;
+      color: #0661a7;
     }
 
     
@@ -227,7 +227,7 @@ h6 {
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
-.header {
+.header { 
   --background-color: #00365F; 
   --default-color: #ffffff;
   --heading-color: #ffffff;
@@ -1684,7 +1684,7 @@ section,
 .barraFinal {
   padding: 50px 0; /* Reduzi o padding para metade do valor original */
   max-height: 10rem;
-  background: #00365F;
+  background: #021e33;
   display: flex;
   align-items: center;
   justify-content: center; /* Centraliza a imagem horizontalmente */
