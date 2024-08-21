@@ -1,4 +1,4 @@
- Landing Page - Everton Tenório
+ Landing Page - Everton Ténorio
 
 Descrição:
 Este projeto é uma Landing Page desenvolvida para Everton Tenório. A página foi projetada com foco em uma interface amigável, moderna e responsiva, utilizando as melhores práticas de design e desenvolvimento web.
