@@ -2,7 +2,7 @@
 
 Descrição:
 Este projeto é uma Landing Page desenvolvida para Everton Tenório. A página foi projetada com foco em uma interface amigável, moderna e responsiva, utilizando as melhores práticas de design e desenvolvimento web.
-Você pode conferir o resultado final [AQUI](https://www.evertonpsiquiatra.com.br/)
+Você pode conferir o resultado final AQUI: https://www.evertonpsiquiatra.com.br/
 
 Funcionalidades:
 Design Responsivo: A página se adapta a diferentes dispositivos, garantindo uma experiência consistente em desktops, tablets e smartphones.
