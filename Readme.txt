@@ -2,6 +2,7 @@
 
 Descrição:
 Este projeto é uma Landing Page desenvolvida para Everton Tenório. A página foi projetada com foco em uma interface amigável, moderna e responsiva, utilizando as melhores práticas de design e desenvolvimento web.
+Você pode conferir o resultado final [AQUI](https://www.evertonpsiquiatra.com.br/)
 
 Funcionalidades:
 Design Responsivo: A página se adapta a diferentes dispositivos, garantindo uma experiência consistente em desktops, tablets e smartphones.
@@ -16,6 +17,8 @@ Bootstrap 5
 
 Como Utilizar:
 Clone o repositório
+git clone https://github.com/DeepLore7/Landing-Page_EvertonTenorio.git
+
 Abra o arquivo index.html em seu navegador:
 Você pode abrir diretamente no navegador ou utilizar uma extensão de live server para ver as alterações em tempo real.
 
