@@ -82,11 +82,29 @@
     display: block;
     margin: 0 auto; /* Centraliza a imagem horizontalmente */
   }
+
+  .paragrafh-address {
+    display: inline; /* Ajusta a largura do parágrafo para telas menores */;
+  }
+
 }
 
 @media (max-width: 480px) {
   .responsive-image {
     width: 400px; /* Ajuste a largura para telas ainda menores */
+  }
+
+  
+  .paragrafh-address {
+    display: block; /* Ajusta a largura do parágrafo para telas menores */;
+  }
+
+  .hide-hifen {
+    display: none; /* Oculta o hífen em telas menores */
+  }
+
+  .rhp{
+    text-align: center; /* Centraliza o texto em telas menores */
   }
 }
 
